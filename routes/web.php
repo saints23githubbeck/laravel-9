@@ -18,9 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//Route::post('api/send', [EmailController::class, "send"]);
 
-Route::get('api/list', [EmailController::class, "list"]);
-
-//Route::get('api/list', 'EmailController@list');
 
