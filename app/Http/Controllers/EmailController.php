@@ -1,11 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use App\Http\Requests\ValidateRequestBody;
 use App\Jobs\SendEmailJob;
 use App\Utilities\Contracts\ElasticsearchHelperInterface;
-use App\Utilities\Contracts\RedisHelperInterface;
 
 use Illuminate\Http\Request;
 use Elasticsearch\ClientBuilder;

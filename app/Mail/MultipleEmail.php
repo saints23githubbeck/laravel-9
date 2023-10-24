@@ -26,8 +26,8 @@ class MultipleEmail extends Mailable
 
     public function build()
     {
-        return $this->from('sender@example.com', 'Arthur Shadrack') // Specify the sender's email address and name here
-        ->subject($this->messageSubject) // Set the email subject
+        return $this->from('bulkmail@gmail.com', 'Arthur Shadrack')
+        ->subject($this->messageSubject)
         ->view('emailTemplates.bulkEmailTemplate')->with([
             'subject' => $this->messageSubject,
             'body' => $this->messageBody

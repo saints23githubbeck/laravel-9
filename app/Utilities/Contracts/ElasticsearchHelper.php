@@ -40,7 +40,7 @@ class ElasticsearchHelper implements ElasticsearchHelperInterface
         $email->messageBody = $messageBody;
         $email->save();
 
-        // Index the email data in Elasticsearch
+        // Index the  data in Elasticsearch
         $params = [
             'index' => 'your_index_name',
             'type' => '_doc',
